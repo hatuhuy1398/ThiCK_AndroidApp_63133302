@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "179553681901",
+    "project_id": "thick-androidapp-63133302",
+    "storage_bucket": "thick-androidapp-63133302.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:179553681901:android:d14e5207e90ed9b09e67e4",
+        "android_client_info": {
+          "package_name": "hatuhuy1398.thick_androidapp_63133302"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCx5HiEfU13hKD3fsG-y7NxiXQLrT-sl6Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
