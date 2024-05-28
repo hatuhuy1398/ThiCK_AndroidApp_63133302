@@ -15,7 +15,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingBottom="70dp">
 
 
             <LinearLayout
@@ -58,11 +59,11 @@
                         android:id="@+id/imageView2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toTopOf="@+id/imageView"
                         app:layout_constraintEnd_toEndOf="@+id/imageView"
+                        app:layout_constraintHorizontal_bias="1.0"
                         app:layout_constraintStart_toEndOf="@+id/imageView"
                         app:layout_constraintTop_toTopOf="@+id/imageView"
-                        app:layout_constraintHorizontal_bias="1.0"
-                        app:layout_constraintBottom_toTopOf="@+id/imageView"
                         app:srcCompat="@drawable/red_circle" />
 
                     <TextView
@@ -71,8 +72,7 @@
                         android:text="3"
                         android:textColor="@color/white"
                         app:layout_constraintEnd_toEndOf="@+id/imageView2"
-                        app:layout_constraintStart_toStartOf="@id/imageView2" >
-                    </TextView>
+                        app:layout_constraintStart_toStartOf="@id/imageView2"></TextView>
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </LinearLayout>
@@ -156,10 +156,10 @@
                     android:id="@+id/textView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:layout_marginStart="24dp"
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="24dp"
+                    android:layout_weight="1"
                     android:text="Product Popular"
                     android:textColor="@color/black"
                     android:textSize="18sp"
