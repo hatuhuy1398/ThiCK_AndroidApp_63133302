@@ -1,4 +1,4 @@
-package hatuhuy1398.thick_androidapp_63133302;
+package hatuhuy1398.thick_androidapp_63133302.Activity;
 
 import android.os.Bundle;
 
