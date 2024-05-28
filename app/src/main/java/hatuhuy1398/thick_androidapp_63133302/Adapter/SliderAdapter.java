@@ -37,7 +37,7 @@ public class SliderAdapter extends RecyclerView.Adapter<SliderAdapter.SliderView
 
     @NonNull
     @Override
-    public SliderViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public SliderAdapter.SliderViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         context = parent.getContext();
         return new SliderViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.slide_item_container, parent, false));
 

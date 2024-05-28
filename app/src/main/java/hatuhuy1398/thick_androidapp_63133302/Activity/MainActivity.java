@@ -9,7 +9,6 @@ import java.util.ArrayList;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.ValueEventListener;
-import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.viewpager2.widget.CompositePageTransformer;
 import androidx.viewpager2.widget.MarginPageTransformer;
@@ -32,7 +31,7 @@ public class MainActivity extends BaseActivity {
 
     }
     private void initBanner(){
-        DatabaseReference myRef = database.getReference("banner");
+        DatabaseReference myRef = database.getReference("Banner");
         binding.progressBarBanner.setVisibility(View.VISIBLE);
         ArrayList<SliderItems> items = new ArrayList<>();
         myRef.addListenerForSingleValueEvent(new ValueEventListener() {

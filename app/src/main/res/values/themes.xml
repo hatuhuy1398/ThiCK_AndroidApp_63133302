@@ -5,5 +5,7 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
-    <style name="Theme.ThiCK_AndroidApp_63133302" parent="Base.Theme.ThiCK_AndroidApp_63133302" />
+    <style name="Theme.ThiCK_AndroidApp_63133302" parent="Base.Theme.ThiCK_AndroidApp_63133302" >
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
 </resources>
