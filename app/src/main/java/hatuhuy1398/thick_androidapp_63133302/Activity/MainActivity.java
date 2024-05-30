@@ -74,7 +74,7 @@ public class MainActivity extends BaseActivity {
                 if(snapshot.exists()){
 
                     for(DataSnapshot issue : snapshot.getChildren()){
-                       
+
                         items.add(issue.getValue(SliderItems.class));
                     }
                     banners(items);
