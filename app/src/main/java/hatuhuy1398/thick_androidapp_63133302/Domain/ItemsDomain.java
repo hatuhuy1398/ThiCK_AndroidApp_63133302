@@ -1,6 +1,5 @@
 package hatuhuy1398.thick_androidapp_63133302.Domain;
 
-import java.io.Serial;
 import java.io.Serializable;
 import java.util.ArrayList;
 
@@ -8,11 +7,11 @@ public class ItemsDomain implements Serializable {
     private String title;
     private String description;
     private ArrayList<String> picUrl;
-    private String price;
+    private long price;
     private String oldPrice;
     private int review;
     private double rating;
-    private int numberInCart;
+    private int NumberinCart;
     public ItemsDomain() {
     }
 
@@ -40,11 +39,11 @@ public class ItemsDomain implements Serializable {
         this.picUrl = picUrl;
     }
 
-    public String getPrice() {
+    public long getPrice() {
         return price;
     }
 
-    public void setPrice(String price) {
+    public void setPrice(long price) {
         this.price = price;
     }
 
@@ -72,15 +71,15 @@ public class ItemsDomain implements Serializable {
         this.rating = rating;
     }
 
-    public int getNumberInCart() {
-        return numberInCart;
+    public int getNumberinCart() {
+        return NumberinCart;
     }
 
-    public void setNumberInCart(int numberInCart) {
-        this.numberInCart = numberInCart;
+    public void setNumberinCart(int numberinCart) {
+        this.NumberinCart = numberinCart;
     }
 
-    public ItemsDomain(String title, String description, String picUrl, String price, String oldPrice, int review, double rating) {
+    public ItemsDomain(String title, String description, String picUrl, long price, String oldPrice, int review, double rating) {
         this.title = title;
         this.description = description;
         this.picUrl = new ArrayList<>();

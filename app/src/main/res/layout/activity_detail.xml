@@ -186,11 +186,11 @@
                             android:layout_height="1dp"
                             android:background="@color/darkGrey"/>
                         </com.google.android.material.appbar.AppBarLayout>
-                        <androidx.viewpager.widget.ViewPager
+                        <androidx.viewpager2.widget.ViewPager2
                             android:layout_width="match_parent"
                             android:layout_height="200dp"
                             android:background="@color/white"
-                            android:id="@+id/viewpager"/>
+                            android:id="@+id/viewpagerSlider"/>
                     </LinearLayout>
                     <androidx.appcompat.widget.AppCompatButton
                         android:layout_width="match_parent"

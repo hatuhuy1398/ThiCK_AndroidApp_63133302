@@ -14,4 +14,6 @@ public class SliderItems {
     public void setUrl(String url) {
         this.url = url;
     }
+    public SliderItems() {
+    }
 }

@@ -13,6 +13,9 @@ import android.view.LayoutInflater;
 import android.graphics.Paint;
 import com.bumptech.glide.request.RequestOptions;
 import com.bumptech.glide.load.resource.bitmap.CenterCrop;
+import android.content.Intent;
+import hatuhuy1398.thick_androidapp_63133302.Activity.DetailActivity;
+
 public class PopularAdapter extends RecyclerView.Adapter<PopularAdapter.Viewholder>{
     ArrayList<ItemsDomain> items;
     Context context;
@@ -45,9 +48,9 @@ public class PopularAdapter extends RecyclerView.Adapter<PopularAdapter.Viewhold
     holder.itemView.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            //Intent intent = new Intent(context, ProductDetailActivity.class);
-            //intent.putExtra("item", items.get(position));
-            //context.startActivity(intent);
+            Intent intent = new Intent(context, DetailActivity.class);
+            intent.putExtra("object", items.get(position));
+            context.startActivity(intent);
         }
     });
     }
