@@ -65,14 +65,16 @@ public class MainActivity extends BaseActivity {
     }
 
     private void initBanner(){
-        DatabaseReference myRef = database.getReference("banner");
+        DatabaseReference myRef = database.getReference("Banner");
         binding.progressBarBanner.setVisibility(View.VISIBLE);
         ArrayList<SliderItems> items = new ArrayList<>();
         myRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if(snapshot.exists()){
+
                     for(DataSnapshot issue : snapshot.getChildren()){
+                       
                         items.add(issue.getValue(SliderItems.class));
                     }
                     banners(items);
